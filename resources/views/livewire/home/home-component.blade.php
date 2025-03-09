@@ -3,7 +3,7 @@
     @if ($hero)
     <div class="py-0  text-black/50 dark:text-white/50">
         <div class="p-0">
-            <section class="rounded-xl bg-center bg-cover
+            <section class="rounded-t-3xl bg-center bg-cover
                 bg-[url('https://upload.wikimedia.org/wikipedia/commons/b/be/Balai_kota_Padang_tempo_doeloe.jpg')] bg-green-50 bg-blend-multiply
                 dark:bg-[url('https://padang.go.id/assets/frontend/img/bg/balaikota.webp')] h-[700px]
                  dark:bg-green-950/60 dark:bg-blend-multiply">
@@ -43,28 +43,28 @@
             </div>
         </section>
         <section class="mb-0">
-            <div class="py-10 md:py-16 sm:py-10 lg:py-16">
-                <div class="-mt-16 lg:-mt-32 md:-mt-28 sm:-mt-20 z-30 dark:hidden">
+            <div class="py-11 md:py-12 sm:py-12 lg:py-14">
+                <div class="-mt-16 lg:-mt-28 md:-mt-24 sm:-mt-20 z-30 dark:hidden">
                     <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60">
                         <path fill="white" d="M0,0V60H1440V0A5771,5771,0,0,1,0,0Z" />
                     </svg>
                 </div>
-                <div class="-mt-16 lg:-mt-32 md:-mt-28 sm:-mt-20 z-30 dark:block hidden">
+                <div class="-mt-16 lg:-mt-28 md:-mt-24 sm:-mt-20 z-30 dark:block hidden">
                     <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60">
                         <path fill="" d="M0,0V60H1440V0A5771,5771,0,0,1,0,0Z" />
                     </svg>
                 </div>
             </div>
             <div class="border border-b-4 border-t-0 border-green-100 dark:border-gray-700 rounded-xl p-4 lg:p-10 bg-white dark:backdrop-blur-sm dark:bg-transparent
-                mb-12 mx-auto max-w-screen-lg -m-36">
+                mb-12 mx-auto max-w-screen-lg -m-1">
 
             </div>
         </section>
 
-        <section class="mb-4 -mt-16">
-            <div class="border border-green-200/50 dark:border-gray-700/40 dark:border-b-0 lg:mx-12 backdrop-blur-md rounded-[14px] p-4 md:p-8 mb-8">
+        <section class="mb-4 -mt-2">
+            <div class="border border-green-200/50 dark:border-gray-700/40 dark:border-b-0 lg:mx-12 backdrop-blur-md rounded-[16px] p-4 md:p-8 mb-8">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-                    <div class=" border border-gray-200 dark:border-gray-700 rounded-lg p-2 md:p-6 dark:backdrop-blur-sm">
+                    <div class=" border border-gray-200 dark:border-gray-700 rounded-2xl p-2 md:p-6 dark:backdrop-blur-sm">
                         <h2 class="text-xl text-gray-900 dark:text-white font-bold mb-2">Agenda Kota Padang</h2>
                         <div class="flex items-center space-x-4 rtl:space-x-reverse mb-3">
                             <div class="flex items-center">
@@ -166,7 +166,7 @@
                         </div>
 
                     </div>
-                    <div class="md:col-span-2 border border-gray-200 dark:border-gray-700 rounded-lg p-2 md:p-6 dark:backdrop-blur-sm">
+                    <div class="md:col-span-2 border border-gray-200 dark:border-gray-700 rounded-2xl p-2 md:p-6 dark:backdrop-blur-sm">
                         <h2 class="text-gray-900 dark:text-white text-xl font-extrabold mb-2">Start with
                             laravel Design System</h2>
                         <p class="text-base font-normal text-gray-500 dark:text-gray-400 mb-4">Static websites
