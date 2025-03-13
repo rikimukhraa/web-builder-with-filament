@@ -1,22 +1,23 @@
 <div>
     <x-page.section-page>
         <x-slot name="content">
-            <div class="py-12 w-full max-w-screen-2xl mx-auto">
-                <div class="border
-                border-gray-200 dark:border-gray-700
-                rounded-[14px] p-6 md:p-4 mb-8">
+            <div class="py-0 md:py-4 w-full max-w-screen-2xl mx-auto">
+                <div class="relative dark:bg-black z-10 rounded-2xl h-14 w-40 mx-auto lg:-mb-10">
+
+                </div>
+                <div class="border border-gray-200 dark:border-zinc-900
+                 p-0 md:p-2 mb-8 px-4 rounded">
                     <div id="controls-carousel" class="relative w-full" data-carousel="static">
                         <!-- Carousel wrapper -->
-
                         <div class="z-0 relative h-56 overflow-hidden rounded-lg md:h-96">
                             <!-- Item 1 -->
-                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <div class="hidden rounded duration-700 ease-in-out" data-carousel-item>
                                 <img src="https://res.cloudinary.com/dcl0dmpgl/image/upload/v1685523657/GreenState%20AG/Home%20Page/Hero%20Area/hero_area_second_background_lql1ru.webp"
                                     class="relative block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                                     alt="...">
                             </div>
                             <!-- Item 2 -->
-                            <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                            <div class="hidden rounded duration-700 ease-in-out" data-carousel-item="active">
                                 <img src="https://res.cloudinary.com/dcl0dmpgl/image/upload/v1685523657/GreenState%20AG/Home%20Page/Hero%20Area/hero_area_second_background_lql1ru.webp"
                                     class="relative block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                                     alt="...">
@@ -58,7 +59,7 @@
 
             <div class="grid gap-6 lg:grid-cols-2 lg:gap-8">
                 <a href="https://laravel.com/docs" id="docs-card"
-                    class="flex flex-col items-start gap-6 overflow-hidden rounded-[14px] backdrop-blur-sm bg-white/40 p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05]
+                    class="flex flex-col items-start gap-6 overflow-hidden rounded-[14px] backdrop-blur-sm bg-white/40 p-4 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05]
                             transition duration-300 hover:text-black/70 hover:ring-black/20 focus:outline-none
                             focus-visible:ring-[#03A56A] md:row-span-3 lg:p-10 lg:pb-10 dark:bg-black dark:ring-zinc-800
                             dark:hover:text-white/70 hover:ring-green-500  dark:hover:ring-green-900 dark:focus-visible:ring-[#03A56A]">

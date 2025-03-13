@@ -1,15 +1,15 @@
 @props(['hero','section'])
 <div>
     @if ($hero)
-    <div class="py-0  text-black/50 dark:text-white/50">
+    <div class="py-0 text-black/50 dark:text-white/50">
         <div class="p-0">
             <section class="rounded-t-3xl bg-center bg-cover
                 bg-[url('https://upload.wikimedia.org/wikipedia/commons/b/be/Balai_kota_Padang_tempo_doeloe.jpg')] bg-green-50 bg-blend-multiply
-                dark:bg-[url('https://padang.go.id/assets/frontend/img/bg/balaikota.webp')] h-[700px]
+                dark:bg-[url('https://padang.go.id/assets/frontend/img/bg/balaikota.webp')] h-fit min-h-fit
                  dark:bg-green-950/60 dark:bg-blend-multiply">
-                <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-36 ">
-                    <div class="mt-10 lg:mt-16 mx-auto py-6 lg:py-8">
-                        <img class="w-12 h-12 mx-auto mb-2 hover:animate-bounce opacity-60 "
+                <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-20 ">
+                    <div class="mt-6 lg:mt-10 mx-auto py-6 lg:py-8">
+                        <img class="w-12 h-12 mx-auto mb-2 hover:animate-bounce opacity-80 "
                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Logo_Padang.svg/1782px-Logo_Padang.svg.png"
                             alt="">
                         <p
@@ -19,7 +19,7 @@
                             class="w-10/12 mx-auto mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl
                         lg:text-7xl mt-2
                         lg:mt-2">
-                            <span class="text-transparent bg-clip-text bg-gradient-to-r to-green-50 from-lime-50">
+                            <span class="text-transparent bg-clip-text bg-gradient-to-t to-green-300 from-lime-50">
                                 Satujuan Untuk Kejayaan <br>Kota Padang
                             </span>
                         </h1>
@@ -55,7 +55,7 @@
                     </svg>
                 </div>
             </div>
-            <div class="border border-b-4 border-t-0 border-green-100 dark:border-gray-700 rounded-xl p-4 lg:p-10 bg-white dark:backdrop-blur-sm dark:bg-transparent
+            <div class="border border-b-4 border-t-0 border-green-100 dark:border-gray-700/20 rounded-xl p-4 lg:p-10 bg-white dark:backdrop-blur-sm dark:bg-transparent
                 mb-12 mx-auto max-w-screen-lg -m-1">
 
             </div>
