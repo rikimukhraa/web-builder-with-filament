@@ -6,7 +6,7 @@
 
                 </div>
                 <div class="border border-gray-200 dark:border-zinc-900
-                 p-0 md:p-2 mb-8 px-4 rounded">
+                rounded-[14px] p-0 md:p-2 mb-8 px-4">
                     <div id="controls-carousel" class="relative w-full" data-carousel="static">
                         <!-- Carousel wrapper -->
                         <div class="z-0 relative h-56 overflow-hidden rounded-lg md:h-96">
