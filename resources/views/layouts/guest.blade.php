@@ -6,9 +6,29 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ config('app.name', 'Laravel') }}</title>
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        .navbar {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.8);
+        }
+        .dropdown-content {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.3s ease-in-out;
+        }
+        .group:hover .dropdown-content {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    </style>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
 </head>
 
 <body class="antialiased h-full bg-white bg-[url('https://laravel.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] dark:bg-black/90 dark:bg-blend-multiply dark:bg-[url('https://wallpaper.dog/large/20511836.jpg')]">
@@ -22,7 +42,6 @@
         {{ $slot }}
 
     </div>
-
     <x-inc.footer-panel>
         <x-slot name="content">
               <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
@@ -144,8 +163,25 @@
               </div>
         </x-slot>
     </x-inc.footer-panel>
+     <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const closeBtn = document.getElementById('close-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            gsap.to(mobileMenu, { y: '1%', duration: 0.5, ease: 'power2.out' });
+
+        });
+
+        closeBtn.addEventListener('click', () => {
+            gsap.to(mobileMenu, { y: '-500', duration: 0.5, ease: 'power2.in' });
+
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     <x-script.dark-light />
+    @livewireScripts
+
 </body>
 </html>
 {{-- <div id="banner" tabindex="-1" class="fixed z-50 flex w-full items-start justify-between gap-8 border-b border-gray-200 bg-gray-50 px-4 py-3 dark:border-gray-700 dark:bg-gray-800 sm:items-center lg:py-4">

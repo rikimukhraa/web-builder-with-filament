@@ -3,6 +3,7 @@
 namespace App\View\Components;
 
 use App\Models\Menu;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\View\Component;
 use Illuminate\View\View;
 
@@ -13,10 +14,10 @@ class AppLayout extends Component
      */
     public function render(): View
     {
-        $nav = cache()->remember('nav_menu', 60*60, function () {
+        $nav = Cache::remember('nav_menu_app', 60*60, function () {
             return Menu::where('parent_id', null)
                 ->with('children')->where('is_active', true)
-                ->orderBy('id')
+                ->orderBy('order','asc')
                 ->get();
         });
         return view('layouts.app',[

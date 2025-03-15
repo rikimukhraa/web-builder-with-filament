@@ -8,6 +8,8 @@ use Livewire\Component;
 #[Lazy()]
 class PageController extends Component
 {
+    public $title;
+    public $data =[];
 
     public function placeholder()
     {
@@ -16,6 +18,10 @@ class PageController extends Component
 
     public function render()
     {
-        return view('livewire.page.page-controller');
+        return view('livewire.page.page-controller',[
+            'title'=> $this->title,
+            'data'=> $this->data
+
+        ]);
     }
 }

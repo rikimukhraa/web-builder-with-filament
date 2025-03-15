@@ -3,10 +3,12 @@
     @if ($hero)
     <div class="py-0 text-black/50 dark:text-white/50">
         <div class="p-0">
-            <section class="rounded-t-3xl bg-center bg-cover
+            <section class="rounded-t-3xl bg-center bg-cover rounded-b-3xl
                 bg-[url('https://upload.wikimedia.org/wikipedia/commons/b/be/Balai_kota_Padang_tempo_doeloe.jpg')] bg-green-50 bg-blend-multiply
                 dark:bg-[url('https://padang.go.id/assets/frontend/img/bg/balaikota.webp')] h-fit min-h-fit
                  dark:bg-green-950/60 dark:bg-blend-multiply">
+
+
                 <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-20 ">
                     <div class="mt-6 lg:mt-10 mx-auto py-6 lg:py-8">
                         <img class="w-12 h-12 mx-auto mb-2 hover:animate-bounce opacity-80 "
@@ -43,14 +45,15 @@
             </div>
         </section>
         <section class="mb-0">
-            <div class="py-11 md:py-12 sm:py-12 lg:py-14">
+
+            <div class="py-11 md:py-12 sm:py-12 lg:py-14 ">
                 <div class="-mt-16 lg:-mt-28 md:-mt-24 sm:-mt-20 z-30 dark:hidden">
-                    <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60">
+                    <svg class="border-b-8 border-white bg-clip-content w-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60">
                         <path fill="white" d="M0,0V60H1440V0A5771,5771,0,0,1,0,0Z" />
                     </svg>
                 </div>
                 <div class="-mt-16 lg:-mt-28 md:-mt-24 sm:-mt-20 z-30 dark:block hidden">
-                    <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60">
+                    <svg class="border-b-8 border-black/90 w-full rounded-b-xl" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60">
                         <path fill="" d="M0,0V60H1440V0A5771,5771,0,0,1,0,0Z" />
                     </svg>
                 </div>
@@ -166,6 +169,7 @@
                         </div>
 
                     </div>
+
                     <div class="md:col-span-2 border border-gray-200 dark:border-gray-700 rounded-2xl p-2 md:p-6 dark:backdrop-blur-sm">
                         <h2 class="text-gray-900 dark:text-white text-xl font-extrabold mb-2">Start with
                             laravel Design System</h2>
@@ -213,6 +217,7 @@
                 </div>
             </div>
         </section>
+
     </div>
 
 
@@ -285,7 +290,7 @@
                     {{ $section['value'][0]['data']['content'] ?? 'content' }}</span>
                    </span>
             </h1>
-            <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
+            <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400 py-2">
                 {{ $section['value'][0]['data']['sub_content'] ?? 'sub_content' }}</span>
                 .</p>
 
