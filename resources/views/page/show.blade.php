@@ -22,7 +22,6 @@
 
                         </div>
                     </div>
-                    <livewire:page.page-controller :title="$title" :data="$data"/>
                 </main>
             </div>
         </div>

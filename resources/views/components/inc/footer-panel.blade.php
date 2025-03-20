@@ -30,7 +30,6 @@
 @props(['content'=>''])
 
 
-
 <footer class="backdrop-blur-lg rounded-md">
 {{ $content }}
 </footer>

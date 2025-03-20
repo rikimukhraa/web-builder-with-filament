@@ -10,9 +10,10 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+        @livewireScripts
     </head>
     <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100">
+        {{-- <div class="min-h-screen bg-gray-100">
             @include('layouts.navigation')
 
             <!-- Page Heading -->
@@ -30,7 +31,7 @@
             </main>
         </div>
         <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/script-name.js"></script>
-      <x-script.dark-light />
+      <x-script.dark-light /> --}}
     </body>
 </html>
 

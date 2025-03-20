@@ -1,8 +1,6 @@
 <?php
 
 namespace App\Livewire\Home;
-
-use App\Models\SettingWeb;
 use Livewire\Attributes\Lazy;
 use Livewire\Component;
 

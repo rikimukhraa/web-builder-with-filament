@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ListController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -17,11 +18,10 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
 
-
 Route::prefix('/')->group(function () {
     Route::get('/', [HomeController::class, 'index'])->name('home');
     Route::get('/{slug}', [HomeController::class, 'show'])->name('show');
-    // Route::get('/post/{slug}', [ListController::class, 'list'])->name('post.detail');
+    Route::get('/post/{slug}', [ListController::class, 'list'])->name('post.detail');
     // Route::get('/about', [HomeController::class, 'about'])->name('about');
     // Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
     // Route::get('/services', [HomeController::class, 'services'])->name('services');
